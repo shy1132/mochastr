@@ -32,6 +32,15 @@ function string.includes(str, substr, pos)
     end
 end
 
+function string.indexOf(str, substr, pos)
+    local foundPos = string.find(str, substr, pos, true) --for some reason, if i return it directly, it returns two numbers... maybe im stupid
+    if not foundPos then
+        foundPos = -1
+    end
+
+    return foundPos
+end
+
 function string.split(str, sep)
     local tb = {}
 
@@ -50,15 +59,6 @@ end
 
 function string.replaceAll(str, old, new)
     return string.gsub(str, old, new)
-end
-
-function string.indexOf(str, substr, pos)
-    local foundPos = string.find(str, substr, pos, true) --for some reason, if i return it directly, it returns two numbers... maybe im stupid
-    if not foundPos then
-        foundPos = -1
-    end
-
-    return foundPos
 end
 
 function string.search(str, substr, pos)
