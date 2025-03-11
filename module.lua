@@ -41,6 +41,19 @@ function string.indexOf(str, substr, pos)
     return foundPos
 end
 
+function string.search(str, substr, pos)
+    local foundPos = string.find(str, substr, pos, false) --same deal as last comment
+    if not foundPos then
+        foundPos = -1
+    end
+
+    return foundPos
+end
+
+function string.slice(str, pos1, pos2)
+    return string.sub(str, pos1, pos2)
+end
+
 function string.split(str, sep)
     local tb = {}
 
@@ -59,15 +72,6 @@ end
 
 function string.replaceAll(str, old, new)
     return string.gsub(str, old, new)
-end
-
-function string.search(str, substr, pos)
-    local foundPos = string.find(str, substr, pos, false) --same deal as last comment
-    if not foundPos then
-        foundPos = -1
-    end
-
-    return foundPos
 end
 
 function string.padStart(str, amount, character)
@@ -138,10 +142,6 @@ end
 
 function string.repeat2(str, times)
     return string.rep(str, times)
-end
-
-function string.slice(str, pos1, pos2)
-    return string.sub(str, pos1, pos2)
 end
 
 function string.toLowerCase(str)
