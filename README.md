@@ -20,4 +20,4 @@ an implementation of the javascript string lib for lua5.1+, covering most of the
 `toLowerCase`  
 `toUpperCase`
 
-the only difference you should notice is that numbers differ from js to lua, since lua counts from 1 instead of 0
+the only difference you should notice is that you may have to shift numbers if directly porting js code, since lua counts from 1 instead of 0
