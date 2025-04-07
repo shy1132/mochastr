@@ -1,5 +1,5 @@
 # mochastr
-a port of the javascript string lib to lua5.1+, covering most of the useful non-deprecated string functions in js:
+an implementation of the javascript string lib for lua5.1+, covering most of the useful non-deprecated string functions in js:
 
 `charAt`  
 `startsWith`  
