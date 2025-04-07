@@ -6,7 +6,7 @@ source = {
 }
 
 description = {
-   summary = "most of the javascript string lib ported to lua5.1+",
+   summary = "most of the javascript string lib implemented in lua5.1+",
    homepage = "https://github.com/shy1132/mochastr",
    license = "MIT"
 }
